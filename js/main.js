@@ -29,7 +29,7 @@ $(window).resize(function(event) {
 function adaptive_header(w,h) {
 		var headerMenu=$('.header-body__mob-menu');
 		var headerLang=$('.header-body__lang');
-	if(w<767){
+	if(w<768){
 		if(!headerLang.hasClass('done')){
 			headerLang.addClass('done').appendTo(headerMenu);
 		}
@@ -38,7 +38,7 @@ function adaptive_header(w,h) {
 			headerLang.removeClass('done').prependTo($('.header-body__top'));
 		}
 	}
-	if(w<767){
+	if(w<768){
 		if(!$('.header-body__nav').hasClass('done')){
 			$('.header-body__nav').addClass('done').appendTo(headerMenu);
 		}
